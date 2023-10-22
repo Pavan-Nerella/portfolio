@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Skills from "./Components/Skills";
-import Contacts from "./Components/Contacts";
+import Contacts from "./Components/Contacts"
 import All from "./All";
 
 import "./App.css";
