@@ -1,24 +1,13 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./Components/Header";
+import Profile from "./Components/Profile";
 import Skills from "./Components/Skills";
-import Contacts from "./Components/Contacts"
-import All from "./All";
-
-import "./App.css";
-
-function App() {
-  return (
-    <div className="cont">
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<All />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contacts" element={<Contacts />} />
-        </Routes>
-      </BrowserRouter>
+import Contacts from "./Components/Contacts";
+function All(){
+  return(
+    <div>
+      <Profile/>
+      <Skills/>
+      <Contacts/>
     </div>
-  );
+  )
 }
-
-export default App;
+export default All;
